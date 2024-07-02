@@ -22,4 +22,24 @@ struct PlacesViewModel {
         let machuPicchu = PlaceModel(placeName: "Machu Picchu", placeImageName: "Machu_Picchu", placeDescription: "Machu Picchu is the ruins of a city from the Incan empire that was built in the 15th century. The ruins are in the Andes Mountains, over 2,000 metres above sea level. Its walls and other architectural elements are cut into the natural rock.\nIt’s not certain why the city was first built, although some sources suggest it was used as a royal retreat for the emperor, Pachacuti Inca Yupanqui. It is thought to have been used between the 15th and 16th centuries, but was gradually abandoned over time. Today, it is a very popular tourist site, so much so that the Peruvian government has begun limiting the amount of people able to visit each year to preserve it.")
         return [tajMahal, chinaWall, petra, colosseum, christ, chichénItzá, machuPicchu]
     }
+    
+    
+}
+
+//MARK: Test code
+extension PlacesViewModel {
+    
+    func someBasicTask() async {
+        let someTask = Task {
+            
+            throw fatalError()
+            //return "Hey done with the task!"
+        }
+        do {
+            print(try await someTask.value)
+        } catch {
+            
+        }
+        
+    }
 }

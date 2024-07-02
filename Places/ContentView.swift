@@ -60,7 +60,11 @@ struct ContentView: View {
                     }
                 } */
             }.navigationTitle("Places").searchable(text: $searchText).padding(EdgeInsets(top: 0, leading: -20, bottom: 0, trailing: -20))
-        }
+        }.onAppear(perform: {
+            Task {
+                await PlacesViewModel().someBasicTask()
+            }
+        })
     }
 }
 
