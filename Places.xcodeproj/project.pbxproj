@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		9728EA242C2574FE005B65C6 /* PlaceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728EA232C2574FE005B65C6 /* PlaceModels.swift */; };
 		9728EA262C25753D005B65C6 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728EA252C25753D005B65C6 /* PlacesViewModel.swift */; };
 		9728EA282C2584E7005B65C6 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728EA272C2584E7005B65C6 /* PlaceDetailsView.swift */; };
+		9741CB0F2F837769002C8675 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741CB0E2F837769002C8675 /* Models.swift */; };
+		97C58D692F837526007A9603 /* Test2.text in Resources */ = {isa = PBXBuildFile; fileRef = 97C58D682F837526007A9603 /* Test2.text */; };
+		97C80A742F825C050037A493 /* Randomfile.text in Resources */ = {isa = PBXBuildFile; fileRef = 97C80A732F825C050037A493 /* Randomfile.text */; };
+		97C976CD2F836FEC00BCC737 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C976CC2F836FEC00BCC737 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,17 @@
 		9728EA232C2574FE005B65C6 /* PlaceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModels.swift; sourceTree = "<group>"; };
 		9728EA252C25753D005B65C6 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
 		9728EA272C2584E7005B65C6 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
+		9741CB0E2F837769002C8675 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		97C58D682F837526007A9603 /* Test2.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Test2.text; sourceTree = "<group>"; };
+		97C80A732F825C050037A493 /* Randomfile.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Randomfile.text; sourceTree = "<group>"; };
+		97C976CC2F836FEC00BCC737 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		AD234B56863B910C9F05CA0F /* Pods-Places.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Places.debug.xcconfig"; path = "Target Support Files/Pods-Places/Pods-Places.debug.xcconfig"; sourceTree = "<group>"; };
 		DC58FB18CA4A82EBC4C554E0 /* Pods_Places.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Places.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		97C976C72F836FBD00BCC737 /* Folder */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Folder; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9728EA0F2C256437005B65C6 /* Frameworks */ = {
@@ -49,7 +61,6 @@
 				AD234B56863B910C9F05CA0F /* Pods-Places.debug.xcconfig */,
 				6B386BE71C85FD733F8AFE68 /* Pods-Places.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,9 +94,13 @@
 			isa = PBXGroup;
 			children = (
 				9728EA152C256437005B65C6 /* PlacesApp.swift */,
+				97C80A732F825C050037A493 /* Randomfile.text */,
 				9728EA172C256437005B65C6 /* ContentView.swift */,
-				9728EA272C2584E7005B65C6 /* PlaceDetailsView.swift */,
 				9728EA252C25753D005B65C6 /* PlacesViewModel.swift */,
+				9728EA272C2584E7005B65C6 /* PlaceDetailsView.swift */,
+				9741CB0E2F837769002C8675 /* Models.swift */,
+				97C976C72F836FBD00BCC737 /* Folder */,
+				97C976C62F836FB200BCC737 /* Group */,
 				9728EA232C2574FE005B65C6 /* PlaceModels.swift */,
 				9728EA192C256439005B65C6 /* Assets.xcassets */,
 				9728EA1B2C256439005B65C6 /* Preview Content */,
@@ -99,6 +114,15 @@
 				9728EA1C2C256439005B65C6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		97C976C62F836FB200BCC737 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				97C976CC2F836FEC00BCC737 /* DataManager.swift */,
+				97C58D682F837526007A9603 /* Test2.text */,
+			);
+			path = Group;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +141,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				97C976C72F836FBD00BCC737 /* Folder */,
 			);
 			name = Places;
 			productName = Places;
@@ -161,7 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C80A742F825C050037A493 /* Randomfile.text in Resources */,
 				9728EA1D2C256439005B65C6 /* Preview Assets.xcassets in Resources */,
+				97C58D692F837526007A9603 /* Test2.text in Resources */,
 				9728EA1A2C256439005B65C6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,9 +228,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Places/Pods-Places-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Places/Pods-Places-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -218,8 +251,10 @@
 				9728EA262C25753D005B65C6 /* PlacesViewModel.swift in Sources */,
 				9728EA282C2584E7005B65C6 /* PlaceDetailsView.swift in Sources */,
 				9728EA182C256437005B65C6 /* ContentView.swift in Sources */,
+				97C976CD2F836FEC00BCC737 /* DataManager.swift in Sources */,
 				9728EA242C2574FE005B65C6 /* PlaceModels.swift in Sources */,
 				9728EA162C256437005B65C6 /* PlacesApp.swift in Sources */,
+				9741CB0F2F837769002C8675 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
